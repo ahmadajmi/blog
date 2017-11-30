@@ -1,0 +1,44 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+title:       أحمد العجمي
+email:       ahmad@ahmadajmi.com
+description: ''
+baseurl:     '' # The subpath of your site, e.g. /blog
+url:         https://ahmadajmi.coms # The base hostname & protocol for your site
+twitter:     https://twitter.com/ahmadajmi
+github:      https://github.com/ahmadajmi
+instagram:   https://www.instagram.com/ahmadajme
+facebook:    https://www.facebook.com/ahmadajmii
+linkedin:    https://www.linkedin.com/in/ahmadajmi
+soundcloud:  https://soundcloud.com/ahmadajmi
+
+markdown:  kramdown
+permalink: pretty
+paginate:  60
+
+sass:
+  style: compressed
+
+gems:
+  - jekyll-paginate
+
+include:
+  - _pages
+
+exclude:
+  - vendor
+  - Gemfile
+  - Gemfile.lock
+
+# Pages path
+defaults:
+  - scope:
+      path: '_pages'
+    values:
+      permalink: /:basename:output_ext
