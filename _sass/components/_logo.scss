@@ -5,6 +5,7 @@
 .c-logo {
   &__link {
     font-size: $font-size-h3;
+    font-weight: $font-weight-bold;
     transition: $global-transition;
 
     @include attention() {
